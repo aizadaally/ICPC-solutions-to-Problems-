@@ -1,0 +1,112 @@
+
+x= "global"
+def foo():
+        print("x inside:",x)
+foo()
+print("x outside:",x)
+
+x=2
+def foo():
+        y= x*3
+        print(y)
+foo()
+def foo():
+    y= "Local"
+
+    def foo():
+        y="local"
+        print(y)
+foo()
+
+x=5
+def foo():
+    x=10
+    print("local x:", x)
+foo()
+print("global x:",x)
+
+def outer():
+    x="local"
+    def inner():
+        nonlocal x
+        x = "nonlocal"
+        print("inner:", x)
+    inner()
+    print("outer:", x)
+outer()
+
+
+def calc_factorial(x):
+        if x==1:
+                return 1
+        else:
+                return (x*calc_factorial(x-1))
+num=157
+print("The factorial of",num, "is", calc_factorial(num)) 
+
+
+c=0
+def add():
+    global c
+    c= c + 2
+    print("Inside add():", c)
+add()
+print("In main:", c)
+
+
+
+x="global"
+
+def foo():
+    global 
+    x= "Aizada"
+def name():
+    global x
+    x = x +  " Berdibekova"
+name()
+print(x)
+
+
+def function():
+    y= 2*3
+    print(y)
+function()
+
+for letter in set("apple"):
+    print(letter)
+
+
+a= 3,2,45
+print(max(a))
+b= "hello", "hi", "h"
+print(min(b))
+c= "go", "fork", "to"
+print(len(c))
+
+
+num={1,2,3,4,5,67,8}
+print(num)
+def num_divisible_by_2(numbers):
+
+    for num in numbers:
+     
+        def divide_by_2(num): 
+            for num          
+         if num % 2 == 0:
+             print(num)
+num_divisible_by_2(num)
+
+def grade(marks):
+    if marks>=80:
+        Grade = 'A'
+    elif marks>=60:
+        Grade = 'B'
+    elif marks>=50:
+        Grade = 'C'
+    else:
+        Grade = 'D'
+    return marks
+marks=[50,10,45,45]
+marks= average(marks)
+Grade= (marks)
+print (Grade)
